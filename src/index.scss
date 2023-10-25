@@ -1,5 +1,6 @@
 $navbar-breakpoint: 480px !default;
 
+@import '@fortawesome/fontawesome-free/css/all.css';
 @import '../node_modules/bulma/bulma.sass';
 @import './components/Loader/loader.scss';
 @import './components/Pagination/pagination.scss';

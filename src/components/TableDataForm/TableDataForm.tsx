@@ -37,9 +37,6 @@ export const TableDataForm: React.FC<Props> = ({ onSubmit }) => {
     address: data?.address,
   });
 
-  // eslint-disable-next-line no-console
-  console.log(formatDate(data?.birthday_date || ''));
-
   const clearForm = () => {
     setValues({
       name: '',

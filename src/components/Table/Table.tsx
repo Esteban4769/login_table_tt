@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import classNames from 'classnames';
-import React, { useEffect } from 'react';
+import React from 'react';
 import { TableData } from '../../types/TableData';
 import { useAppDispatch, useAppSelector } from '../../utils/hooks/reduxHooks';
 import * as selectedTableActions from '../../features/selectedTableData';
@@ -12,11 +12,6 @@ export const Table = () => {
   const { data, loading, error } = useAppSelector(state => state.table);
   const selectedTableData = useAppSelector(state => state.selectedTableData);
   const dispatch = useAppDispatch();
-
-  useEffect(() => {
-    // eslint-disable-next-line no-console
-    console.log(data);
-  }, [data]);
 
   return (
     <>
