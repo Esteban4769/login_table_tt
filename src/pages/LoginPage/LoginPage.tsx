@@ -55,7 +55,7 @@ export const LoginPage = () => {
                   <label htmlFor="username" className="label">
                     Username
                   </label>
-                  <div className="control has-icons-left has-icons-right">
+                  <div className="control has-icons-right">
                     <Field
                       name="username"
                       type="text"
@@ -65,10 +65,6 @@ export const LoginPage = () => {
                         'is-danger': touched.username && errors.username,
                       })}
                     />
-
-                    <span className="icon is-small is-left">
-                      <i className="fas fa-user" />
-                    </span>
 
                     {touched.username && errors.username && (
                       <span className="icon is-small is-right has-text-danger">
@@ -87,7 +83,7 @@ export const LoginPage = () => {
                     Password
                   </label>
 
-                  <div className="control has-icons-left has-icons-right">
+                  <div className="control has-icons-right">
                     <Field
                       name="password"
                       type="password"
@@ -97,10 +93,6 @@ export const LoginPage = () => {
                         'is-danger': touched.password && errors.password,
                       })}
                     />
-
-                    <span className="icon is-small is-left">
-                      <i className="fa fa-lock"></i>
-                    </span>
 
                     {touched.password && errors.password && (
                       <span className="icon is-small is-right has-text-danger">

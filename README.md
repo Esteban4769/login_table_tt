@@ -1,9 +1,2 @@
-# React TypeScript Starter Pack
 
-To use this template click `Use this template`
-
-### Available Scripts
-
-`Deploy` - available to deploy your application to gh-pages
-
-`SCSS Preprocessor` - available to write your styles with modern style language
+[DEMO](https://653923eb7914bd000830a173--voluble-cactus-616b60.netlify.app/)
