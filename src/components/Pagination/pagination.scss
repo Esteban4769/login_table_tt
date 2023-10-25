@@ -1,0 +1,58 @@
+$bg-color-main: white;
+$bg-color-secondary: hsl(217, 71%, 53%);
+$text-color-main: white;
+$text-color-secondary: hsl(217, 71%, 53%);
+$accent-color-hov: hsl(171, 100%, 41%);
+$text-color-accent-btn: black;
+
+.pagination {
+  display: flex;
+  justify-content: center;
+
+  &__page-list {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__page-item {
+    &--disabled {
+      pointer-events: none;
+    }
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    color: $text-color-main;
+    background-color: $bg-color-secondary;
+
+    &--active {
+      background-color: $bg-color-main;
+      border: 1px solid $accent-color-hov;
+      color: $accent-color-hov;
+    }
+
+    &:hover {
+      background-color: $accent-color-hov;
+      color: $text-color-accent-btn;
+    }
+  }
+
+  &__button {
+    margin-right: 8px;
+
+    &--hide {
+      display: none;
+    }
+
+    &--non-active {
+      background-color: hsl(0, 0%, 96%);
+      color: $text-color-accent-btn;
+      border: 1px solid $text-color-accent-btn;
+    }
+  }
+}
